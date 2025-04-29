@@ -2,6 +2,7 @@ import './style.css';
 import createHome from './Home';
 import createMenu from './menu';
 import createContact from './Contact';
+import backgroundImage from './background.jpg'
 
 function loadPage(contentCreator) {
   const contentDiv = document.querySelector('#content');
@@ -17,6 +18,11 @@ function setActiveButton(button) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  document.body.style.backgroundImage = `url(${backgroundImage})`;
+  document.body.style.backgroundSize = 'cover';
+  document.body.style.backgroundRepeat = 'no-repeat';
+  document.body.style.backgroundPosition = 'center';
+
   const homeBtn = document.querySelector('.home');
   const menuBtn = document.querySelector('.menu');
   const contactBtn = document.querySelector('.contact');
