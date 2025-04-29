@@ -5,7 +5,7 @@ body {
     text-align: center;
     color: white;
     min-height: 100vh;
-    background-color: #fafafa; /* fallback color */
+    /* background-color: #fafafa; fallback color */
   }
   
   header {
@@ -31,5 +31,12 @@ body {
   #content {
     margin-top: 2rem;
     padding: 1rem;
+  }
+
+  h1{
+    color:red;
+  }
+  p{
+    color:red;
   }
   
